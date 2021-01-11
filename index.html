@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="font-awesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Shopee</title>
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <div class="content">
+        <!-- logo -->
+        <a class="logo" href="">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <!-- menu -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="">Eletronics</a>
+          </li>
+          <li class="menu-item">
+            <a href="">Fashion</a>
+          </li>
+          <li class="menu-item">
+            <a href="">Tools</a>
+          </li>
+          <li class="menu-item">
+            <a href="">Books</a>
+          </li>
+        </ul>
+        <!-- search -->
+        <div class="search-input">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <!-- cart -->
+        <div class="cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span>4</span>
+        </div>
+        <!-- avatar -->
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MjI0MzY2MF5BMl5BanBnXkFtZTcwMzM3ODM3OA@@._V1_UX172_CR0,0,172,256_AL_.jpg"
+          alt="" class="avatar">
+      </div>
+    </header>
+    <main>
+      <section>
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="">Home</a>
+          <span>></span>
+          <a href="">Kitchen</a>
+          <span>></span>
+          <a href="">Tools</a>
+        </div>
+      </section>
+      <section>
+        <!-- product -->
+        <div class="product">
+          <div class="images">
+            <img src="img/1.jpeg" alt="" id="big-image">
+            <div class="gallery">
+              <div id="item-1" class="item selected" onclick="changeImage('1')">
+                <img src="img/1.jpeg" alt="">
+              </div>
+              <div id="item-2" class="item" onclick="changeImage('2')">
+                <img src="img/2.jpeg" alt="">
+              </div>
+              <div id="item-3" class="item" onclick="changeImage('3')">
+                <img src="img/3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
